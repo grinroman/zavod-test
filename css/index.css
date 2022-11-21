@@ -1,0 +1,237 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+*:focus {
+  outline: none;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+input,
+textarea {
+  border: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  overscroll-behavior-y: none;
+  color: #1d1f22;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+  cursor: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  border: 0;
+  background: 0;
+  cursor: pointer;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../../public/fonts/Raleway-Regular.woff") format("woff"), url("../../public/fonts/Raleway-Regular.eot") format("eot"), url("../../public/fonts/Raleway-Regular.ttf") format("ttf");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../../public/fonts/Raleway-Medium.woff") format("woff"), url("../../public/fonts/Raleway-Medium.eot") format("eot"), url("../../public/fonts/Raleway-Medium.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../../public/fonts/Raleway-Bold.woff") format("woff"), url("../../public/fonts/Raleway-Bold.eot") format("eot"), url("../../public/fonts/Raleway-Bold.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../../public/fonts/Raleway-ExtraBold.woff") format("woff"), url("../../public/fonts/Raleway-ExtraBold.eot") format("eot"), url("../../public/fonts/Raleway-ExtraBold.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../../public/fonts/Raleway-Light.woff") format("woff"), url("../../public/fonts/Raleway-Light.eot") format("eot"), url("../../public/fonts/Raleway-Light.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../../public/fonts/Raleway-Heavy.woff") format("woff"), url("../../public/fonts/Raleway-Heavy.eot") format("eot"), url("../../public/fonts/Raleway-Heavy.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../public/fonts/Roboto-Regular.woff") format("woff"), url("../../public/fonts/Roboto-Regular.eot") format("eot"), url("../../public/fonts/Roboto-Regular.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../../public/fonts/RobotoCondensed-Bold.woff") format("woff"), url("../../public/fonts/RobotoCondensed-Bold.eot") format("eot"), url("../../public/fonts/RobotoCondensed-Bold.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway";
+}
+
+#__next {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+/*# sourceMappingURL=index.css.map */

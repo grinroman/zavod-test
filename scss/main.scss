@@ -1,0 +1,32 @@
+@import "reset.scss";
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: $am-font-family;
+}
+
+#__next {
+   overflow-x: hidden;
+   overflow-y: hidden;
+}
+
+.product {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   &__wrapper {
+      width: 995px;
+      height: 626px;
+      border: 1px solid black;
+   }
+}
+
+.pictures {
+   height: 745px;
+   width: 400px;
+   border: 1px solid red;
+}

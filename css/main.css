@@ -1,0 +1,17 @@
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product__wrapper {
+  width: 995px;
+  height: 626px;
+  border: 1px solid black;
+}
+
+.pictures {
+  height: 745px;
+  width: 400px;
+  border: 1px solid red;
+}
+/*# sourceMappingURL=main.css.map */
