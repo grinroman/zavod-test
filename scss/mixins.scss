@@ -19,3 +19,13 @@
 
    @return null;
 }
+
+@function get-font-weight($name, $state) {
+   $color: map-get($am-font-weights, $name);
+
+   @if $color != null {
+      @return map-get($color, $state);
+   }
+
+   @return null;
+}

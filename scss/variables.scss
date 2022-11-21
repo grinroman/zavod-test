@@ -1,4 +1,4 @@
-$am-font-family: "Raleway";
+$am-font-family: "Montserrat";
 
 $am-containers: (
    desktop: 1264px,
@@ -12,7 +12,20 @@ $am-colors: (
    paragraph: (
       base: #1d1f22,
    ),
-   salad: (
-      base: #5ece7b,
+   backcolor: (
+      base: #e7e1e0,
+      secondary: #e7e1e0,
+   ),
+   bluecolor: (
+      base: #53c5e2,
+   ),
+);
+
+$am-font-weights: (
+   header: (
+      base: 600,
+   ),
+   avgarde: (
+      base: 500,
    ),
 );
