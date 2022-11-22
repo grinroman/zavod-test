@@ -249,7 +249,7 @@ body {
   color: #53c5e2;
 }
 .product__content__wrapper {
-  width: 940px;
+  width: 1000px;
   height: 520px;
   border: 1px solid black;
   display: flex;
@@ -258,6 +258,7 @@ body {
 }
 @media (max-width: 426px) {
   .product__content__wrapper {
+    height: auto;
     padding-top: 28px;
     flex-direction: column;
     width: 340px;
@@ -269,6 +270,7 @@ body {
   width: 500px;
   display: flex;
   flex-direction: column;
+  padding-right: 20px;
 }
 @media (max-width: 426px) {
   .pictures {
@@ -394,5 +396,179 @@ body {
     width: 100%;
     height: 640px;
   }
+}
+
+.description {
+  background-color: aliceblue;
+}
+.description__benefits {
+  display: flex;
+  margin-bottom: 20px;
+  width: 510px;
+}
+.description__benefits__item {
+  display: flex;
+  align-items: center;
+  margin-right: 35px;
+}
+.description__benefits__item__text {
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+.description__benefits__item:last-child {
+  margin-right: 0px;
+}
+.description__list {
+  position: relative;
+  z-index: 1;
+  width: 510px;
+  height: 195px;
+  padding: 30px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.description__list__item {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.description__list__item__title {
+  width: 96px;
+  color: #bca59f;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+.description__list__item__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  width: 300px;
+  margin-left: 20px;
+}
+.description__list__item:last-child {
+  margin-bottom: 0px;
+}
+.description__footer {
+  margin-top: 30px;
+}
+.description__footer__top {
+  display: flex;
+  justify-content: space-between;
+}
+.description__footer__top__price {
+  display: flex;
+}
+.description__footer__top__price__new {
+  color: #ffcc17;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  display: flex;
+  align-items: flex-end;
+  width: 178px;
+  height: 37px;
+}
+.description__footer__top__price__old {
+  color: #b5b5b5;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: flex-end;
+  text-decoration: line-through;
+  padding-bottom: 5px;
+}
+.description__footer__top__availability {
+  display: flex;
+  align-items: center;
+  color: #18c529;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+.description__footer__middle {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.description__footer__middle__count {
+  display: flex;
+}
+.description__footer__middle__count__item {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.description__footer__middle__count__min {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 4px;
+}
+.description__footer__middle__count__plus {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 4px;
+}
+.description__footer__middle__button {
+  height: 50px;
+  width: 334px;
+  border-radius: 4px;
+  background-color: #53c5e2;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+.description__contacts {
+  margin-top: 20px;
+  display: flex;
+}
+.description__contacts__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  margin-right: 20px;
+}
+.description__contacts__buttons {
+  display: flex;
+}
+.description__contacts__buttons__tg {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #39bcff;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+.description__contacts__buttons__wp {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4ec85c;
+  border-radius: 4px;
+}
+
+.svg {
+  position: absolute;
+  z-index: 1;
 }
 /*# sourceMappingURL=main.css.map */
