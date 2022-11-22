@@ -30,6 +30,10 @@ body {
          min-width: 100%;
          max-width: 100%;
          display: flex;
+         @include breakpoint("mobile") {
+            width: 100%;
+            height: 180px;
+         }
 
          &__text {
             width: 75%;
@@ -40,6 +44,10 @@ body {
             }
          }
          &__info {
+            @include breakpoint("mobile") {
+               display: none;
+            }
+
             width: 18%;
             display: flex;
             justify-content: flex-end;
@@ -51,7 +59,7 @@ body {
                justify-content: center;
                align-items: center;
                border-radius: 5px;
-               background-color: get-color(backcolor, secondary);
+               background-color: get-color(backcolor, base);
                margin-top: 5px;
             }
             &__text {
@@ -73,74 +81,152 @@ body {
          }
       }
       &__wrapper {
-         width: 880px;
-         height: 526px;
+         width: 940px;
+         height: 520px;
          border: 1px solid black;
          display: flex;
+         justify-content: center;
+         align-items: center;
+         @include breakpoint("mobile") {
+            flex-direction: column;
+            width: 340px;
+         }
       }
    }
 }
 
 .pictures {
    height: 100%;
-   width: 45%;
-   position: relative;
+   width: 500px;
+   display: flex;
+   flex-direction: column;
 
-   &__arrows {
-      position: absolute;
-      display: flex;
-      top: 37%;
+   @include breakpoint("mobile") {
       width: 100%;
-      padding: 0 5%;
-      justify-content: space-between;
-      left: 0;
-      z-index: 1;
+   }
 
-      &__item {
-         width: 50px;
-         height: 50px;
-         border-radius: 8px;
-         background-color: get-color(backcolor, base);
+   &__main {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      img {
+         width: 100%;
+         height: auto;
+         object-fit: fill;
+
+         @include breakpoint("mobile") {
+            width: 100%;
+         }
+      }
+
+      &__sale {
+         background-color: get-color(yellowcolor, base);
+         width: 108px;
+         height: 37px;
+         top: 6%;
+         left: -1px;
+         position: absolute;
+         z-index: 1;
          display: flex;
          justify-content: center;
-         &:hover {
-            opacity: 0.9;
-            cursor: pointer;
+         align-items: center;
+         font-weight: 500;
+         color: #fff;
+         font-size: 14px;
+         line-height: 17px;
+         letter-spacing: 1.5px;
+         border-radius: 0 5px 5px 0;
+         @include breakpoint("mobile") {
+            display: none;
          }
+      }
 
-         img {
-            transform: scale(0.3);
-         }
+      &__arrows {
+         top: 45%;
+         position: absolute;
+         width: 92%;
+         height: 50px;
+         z-index: 1;
+         display: flex;
+         justify-content: space-between;
 
-         img[alt="rightarrow"] {
-            transform: scale(0.3) rotate(180deg);
+         &__item {
+            height: 50px;
+            width: 50px;
+            background: get-color(backcolor, base);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+
+            & img {
+               transform: scale(0.4);
+            }
+
+            & img[alt="rightarrow"] {
+               transform: scale(0.4) rotate(180deg);
+            }
          }
       }
    }
 
-   &__main {
-      height: 86%;
-      width: 100%;
-      object-fit: fill;
-      position: relative;
-   }
-
    &__list {
-      height: 14%;
-      width: 100%;
+      height: 100%;
+      border: 1px solid blue;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      align-items: center;
       justify-content: space-between;
+      margin: 1px;
 
-      & li img {
-         border-radius: 8px;
+      @include breakpoint("mobile") {
+         height: 62px;
+      }
+
+      &__item {
+         & img {
+            width: 104px;
+            height: 69px;
+            object-fit: fill;
+            border-radius: 5px;
+
+            @include breakpoint("mobile") {
+               width: 80px;
+               height: 53px;
+            }
+         }
+         position: relative;
+
+         &__play {
+            position: absolute;
+            z-index: 1;
+            width: 24px;
+            height: 24px;
+            top: 25%;
+            left: 35%;
+            border-radius: 5px;
+            background-color: get-color(bluecolor, base);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & img {
+               transform: scale(0.15);
+            }
+
+            &:hover {
+               opacity: 0.9;
+            }
+         }
       }
    }
 }
 
 .content {
-   width: 50%;
+   height: 100%;
+   width: 548px;
+   border: 1px solid green;
+   margin: 2px;
+
+   @include breakpoint("mobile") {
+      width: 100%;
+      height: 640px;
+   }
 }

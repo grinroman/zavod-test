@@ -1,5 +1,22 @@
 @import "variables";
 
+@mixin breakpoint($breakpoint) {
+   @if $breakpoint == "" {
+      @content;
+   } @else {
+      $value: map-get($am-breakpoints, $breakpoint);
+
+      @if $value != null {
+         @media (max-width: $value) {
+            @content;
+         }
+      } @else {
+         @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+      }
+   }
+}
+
 @function get-color($name, $state) {
    $color: map-get($am-colors, $name);
 
