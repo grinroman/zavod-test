@@ -250,7 +250,6 @@ body {
 }
 .product__content__wrapper {
   width: 1000px;
-  height: 520px;
   border: 1px solid black;
   display: flex;
   justify-content: center;
@@ -258,10 +257,11 @@ body {
 }
 @media (max-width: 426px) {
   .product__content__wrapper {
-    height: auto;
+    height: 415px;
     padding-top: 28px;
     flex-direction: column;
     width: 340px;
+    display: block;
   }
 }
 
@@ -275,6 +275,7 @@ body {
 @media (max-width: 426px) {
   .pictures {
     width: 100%;
+    padding-right: 0;
   }
 }
 .pictures__main {

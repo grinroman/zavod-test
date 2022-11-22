@@ -90,16 +90,16 @@ body {
       }
       &__wrapper {
          width: 1000px;
-         height: 520px;
          border: 1px solid black;
          display: flex;
          justify-content: center;
          align-items: center;
          @include breakpoint("mobile") {
-            height: auto;
+            height: 415px;
             padding-top: 28px;
             flex-direction: column;
             width: 340px;
+            display: block;
          }
       }
    }
@@ -114,6 +114,7 @@ body {
 
    @include breakpoint("mobile") {
       width: 100%;
+      padding-right: 0;
    }
 
    &__main {
